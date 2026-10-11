@@ -322,6 +322,8 @@ body {
   font-size: 0.8rem;
   color: var(--text-dim);
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
   transition: var(--transition);
   padding: 4px 6px;
   border-radius: 6px;
@@ -387,6 +389,8 @@ body {
   height: 20px;
   cursor: pointer;
   flex-shrink: 0;
+  display: inline-flex;
+  text-decoration: none;
 }
 
 .task-checkbox input {
@@ -455,6 +459,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0.6;
+  text-decoration: none;
   transition: var(--transition);
   flex-shrink: 0;
 }
