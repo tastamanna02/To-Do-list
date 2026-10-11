@@ -147,6 +147,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   transition: var(--transition);
 }
 
@@ -302,6 +303,10 @@ body {
   padding: 5px 12px;
   border-radius: var(--radius-pill);
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: var(--transition);
 }
 
@@ -425,6 +430,46 @@ body {
 
 .task-checkbox input:checked ~ .checkbox-circle svg {
   stroke-dashoffset: 0;
+}
+
+/* PHP Button & Link Checkbox Styles */
+.task-checkbox-btn,
+.task-checkbox-link {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.task-checkbox-btn:hover .checkbox-circle,
+.task-checkbox-link:hover .checkbox-circle {
+  border-color: var(--accent-color);
+}
+
+.task-checkbox-btn.checked .checkbox-circle,
+.task-checkbox-link.checked .checkbox-circle {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.task-checkbox-btn.checked .checkbox-circle svg,
+.task-checkbox-link.checked .checkbox-circle svg {
+  stroke-dashoffset: 0;
+}
+
+.delete-form {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Task Title */
